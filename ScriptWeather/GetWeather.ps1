@@ -143,7 +143,7 @@ $Button.Add_Click({
     if($TextBox1.Text -ne ""){
     
         # Přihlášení k OpenCage Geocoder API
-        $apiKey = "b9dfd172dfc143e6bdc2ddfa1e9d8480"
+        $apiKey = "API_KEY"
         $baseUri = "https://api.opencagedata.com/geocode/v1/json"
 
         # Vytvoření URL pro dotaz API

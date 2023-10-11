@@ -198,7 +198,7 @@ $Button.Add_Click({
             Write-Host "Zeměpisná délka: $($longitude)"
 
             # Nastavení klíče API pro zjištění Města
-            $apiKey = "b9dfd172dfc143e6bdc2ddfa1e9d8480"
+            $apiKey = "API_KEY"
     
             # Nastavení URL pro získání města na základě souřadnic
             $url = "https://api.opencagedata.com/geocode/v1/json?q=$latitude+$longitude&key=$apiKey&language=en&pretty=1"
@@ -214,7 +214,7 @@ $Button.Add_Click({
     }
 
         # Nastavení klíče API pro počasí
-    $apiKey = "7737b33c968483a4ce37168baefcf58f"
+    $apiKey = "API_KEY"
     $url = "https://api.openweathermap.org/data/2.5/weather?q=$city&appid=$apiKey&lang=cz&units=metric"
     
     try {

@@ -1,0 +1,14 @@
+version: '3.3'
+services:
+  db:
+    image: mysql
+
+    environment:
+      MYSQL_DATABASE: 'db_dev'
+      MYSQL_USER: 'user'
+      MYSQL_PASSWORD: 'password'
+      MYSQL_ROOT_PASSWORD: 'docker'
+
+    ports:
+      - '3306:3306'
+    command: --default-authentication-plugin=mysql_native_password

@@ -1,0 +1,23 @@
+﻿<Window x:Class="SEM1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SEM1"
+        mc:Ignorable="d"
+        Title="Agent in maze" Height="800" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="40">
+            </RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Canvas x:Name="canvas" Background="LightGray" Grid.ColumnSpan="2" MouseDown="Canvas_MouseDown"/>
+        <Button x:Name="buttonLoadMaze" Content="Load maze" HorizontalAlignment="Center" Grid.Row="1" Grid.Column="0" VerticalAlignment="Center" Click="ButtonLoadMaze_Click" />
+        <Button x:Name="buttonFindPath" Content="Find path" HorizontalAlignment="Center" Grid.Row="1" Grid.Column="1" VerticalAlignment="Center" Click="ButtonFindPath_Click" />
+    </Grid>
+</Window>
